@@ -1,0 +1,58 @@
+{
+  "name": "multi-region-s3-crr-kms-cmk-source",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "watch": "jsii -w",
+    "package": "jsii-pacmak",
+    "test": "jest"
+  },
+  "author": {
+    "name": "guybrush",
+    "email": "demo@gmail.com",
+    "url": "http://404.com"
+  },
+  "repository": {
+    "url": "https://github.com/OWNER/REPO.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "mycorp.mypackage",
+        "module": "mycorp.mypackage"
+      }
+    }
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.106.1",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "jsii": "1.29.0",
+    "jsii-pacmak": "1.29.0",
+    "ts-jest": "^26.2.0",
+    "typescript": "~3.9.7"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "1.106.1",
+    "constructs": "^3.0.2",
+    "@aws-cdk/aws-iam": "1.106.1",
+    "@aws-cdk/aws-kms": "1.106.1",
+    "@aws-cdk/aws-s3": "1.106.1",
+    "@aws-cdk/aws-ssm": "1.106.1",
+    "@aws-cdk/custom-resources": "1.106.1"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-iam": "1.106.1",
+    "@aws-cdk/aws-kms": "1.106.1",
+    "@aws-cdk/aws-s3": "1.106.1",
+    "@aws-cdk/aws-ssm": "1.106.1",
+    "@aws-cdk/core": "1.106.1",
+    "@aws-cdk/custom-resources": "1.106.1"
+  }
+}
